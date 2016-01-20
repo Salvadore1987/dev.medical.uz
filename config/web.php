@@ -38,14 +38,27 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
+
         'urlManager' => [
+            'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-            ],
+                '/' => 'site/index',
+                'about' => 'site/about',
+                'contact' => 'site/contact',
+                'patient' => 'site/patient',
+                'doctor' => 'site/doctor',
+                'add_record' => 'site/add',
+                'activation' => 'site/activation',
+                'login' => 'site/login',
+                'register' => 'site/register',
+                'logout' => 'site/logout',
+                'captcha' => 'site/captcha',
+                'signup' => 'site/signup'
+            ]
         ],
-        */
+
     ],
     'params' => $params,
 ];

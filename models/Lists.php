@@ -1,0 +1,13 @@
+<?php
+
+namespace app\models;
+
+use yii\db\ActiveRecord;
+use yii\web\User;
+
+class Lists extends ActiveRecord {
+
+    const STATUS_ACTIVE = 1;
+    const STATUS_INACTIVE = 0;
+
+}
